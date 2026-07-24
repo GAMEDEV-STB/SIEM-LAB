@@ -32,15 +32,15 @@ The manager and agent communicate over a host-only/NAT VMware network, with the 
 
 ### Startup verification
 
-![Wazuh startup checks](screenshots/04-wazuh-startup-check.png)
+![Wazuh startup checks](04-wazuh-startup-check.png)
 
 ### Agent-side connection status
 
-![Wazuh Agent connected to manager](screenshots/01-agent-connection.png)
+![Wazuh Agent connected to manager](01-agent-connection.png)
 
 ### Manager-side agent registration
 
-![Agent summary dashboard](screenshots/02-agent-summary-dashboard.png)
+![Agent summary dashboard](02-agent-summary-dashboard.png)
 
 ## 4. File Integrity Monitoring (FIM) — Configuration & Test
 
@@ -59,7 +59,7 @@ Wazuh's `syscheck` module picked up all four filesystem events in near real time
 
 ### FIM events as captured by the manager
 
-![FIM recent events](screenshots/03-fim-recent-events.png)
+![FIM recent events](03-fim-recent-events.png)
 
 This confirms end-to-end detection: filesystem change on the endpoint → agent telemetry → manager rule matching → alert surfaced in the dashboard, correctly attributed to the acting user (`skand`) and agent (`windows-agent`, ID 001).
 
@@ -67,7 +67,7 @@ This confirms end-to-end detection: filesystem change on the endpoint → agent 
 
 The Overview dashboard confirmed the stack's endpoint security and threat intelligence modules were live and receiving data:
 
-![Overview dashboard](screenshots/05-overview-dashboard.png)
+![Overview dashboard](05-overview-dashboard.png)
 
 - **Agents summary:** 1 active, 0 disconnected
 - **Last 24h alerts:** 0 critical, 0 high, 483 medium, 326 low
@@ -76,7 +76,7 @@ The Overview dashboard confirmed the stack's endpoint security and threat intell
 
 ### Endpoint detail view
 
-![Endpoint detail view](screenshots/06-endpoint-detail-view.png)
+![Endpoint detail view](06-endpoint-detail-view.png)
 
 The endpoint detail page also surfaced a **Security Configuration Assessment (SCA)** scan against the CIS Microsoft Windows 11 Enterprise Benchmark v3.0.0:
 
