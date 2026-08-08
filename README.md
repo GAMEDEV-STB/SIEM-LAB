@@ -14,10 +14,10 @@ Deploy a self-hosted SIEM/XDR stack using Wazuh, onboard a Windows endpoint as a
 
 | Component | Details |
 |---|---|
-| Wazuh Manager | Ubuntu VM, `stb-VMware-Virtual-Platform`, IP `192.168.136.133` |
+| Wazuh Manager | Ubuntu VM, `stb-VMware-Virtual-Platform`, IP `192.168.---.---` |
 | Wazuh Version | v4.14.6 |
 | Endpoint (Agent) | Windows 11 Home Single Language (build 10.0.26200.8875), host `MSI-STB` |
-| Agent ID | 001 (`windows-agent`), IP `192.168.136.1` |
+| Agent ID | 001 (`windows-agent`), IP `192.168.---.-` |
 | Endpoint Hardware | 13th Gen Intel Core i7-13620H, 16 cores, 15.7 GB RAM |
 | Deployment model | Manager on Ubuntu, agent installed on Windows host, agent registered to manager over the internal VMware network |
 
